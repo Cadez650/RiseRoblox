@@ -1,3 +1,5 @@
+local module = {}
+
 if shared.Executed then
     print("Executed!")
     local getasset = getsynasset or getcustomasset
@@ -35,3 +37,8 @@ local function isaFile(fileName)
     end
 end
 
+function module.print(string)
+    print(string)
+end
+
+return module
